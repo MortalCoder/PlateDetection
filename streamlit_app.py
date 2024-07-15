@@ -1,12 +1,9 @@
 import streamlit as st
 
-
 pg = st.navigation([
-    st.Page("home.py", title="Home"),
-    st.Page("ml/camera.py", title="Camera"),
-    st.Page("ml/upload.py", title="Upload")
+    st.Page("pgs/home.py", title="Home"),
+    st.Page("pgs/upload.py", title="Upload"),
+    st.Page("pgs/camera.py", title="Camera")
 ])
-
-st.set_page_config(layout="wide")
 
 pg.run()
